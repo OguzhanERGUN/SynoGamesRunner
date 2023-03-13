@@ -5,13 +5,14 @@ using UnityEngine;
 
 public class CountController : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI count;
-    private int countsayaci;
+    [SerializeField] public TextMeshProUGUI count;
+    [SerializeField] public int baslangiccountdegeri;
+    public int countsayaci;
 
     // Start is called before the first frame update
     void Start()
     {
-        countsayaci = 0;
+        countsayaci = baslangiccountdegeri;
         count.text = countsayaci.ToString();
     }
 
@@ -24,10 +25,15 @@ public class CountController : MonoBehaviour
     {
         if (other.gameObject.tag == "Wall")
         {
-            countsayaci++;
+            countsayaci = countsayaci - other.gameObject.GetComponent<StrognValue>().countstartvalue;
+            count.text = countsayaci.ToString();
+        }
+        else if (other.gameObject.tag == "Human")
+        {
+            Destroy(other.gameObject);
+            countsayaci = countsayaci + other.gameObject.GetComponent<StrognValue>().countstartvalue;
             count.text = countsayaci.ToString();
         }
     }
 
-    
 }
