@@ -966,7 +966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   count: {fileID: 2374010502673536329}
-  baslangiccountdegeri: 0
+  baslangiccountdegeri: 10
   countsayaci: 0
 --- !u!1 &6758473750752610518
 GameObject:
