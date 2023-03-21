@@ -1,16 +1,11 @@
 fileFormatVersion: 2
-guid: 8210b1f00e934ae4c9c0602b1fb4097b
+guid: af306b646429e914e9464d2ec7e73009
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Human
-    second: {fileID: 2100000, guid: 2f110609cb609284889f9908c00bdfc7, type: 2}
+  externalObjects: {}
   materials:
-    materialImportMode: 0
+    materialImportMode: 2
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -42,7 +37,7 @@ ModelImporter:
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
-      lastFrame: 24
+      lastFrame: 212
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -122,7 +117,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.01
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

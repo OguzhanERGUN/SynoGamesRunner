@@ -7,7 +7,6 @@ using UnityEngine;
 public class StrognValue : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI count;
-    private int countvalue;
     [SerializeField] public int countstartvalue;
     // Start is called before the first frame update
     void Start()

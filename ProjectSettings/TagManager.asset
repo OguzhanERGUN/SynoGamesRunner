@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Wall
   - Human
+  - Boss
   layers:
   - Default
   - TransparentFX
