@@ -39,12 +39,17 @@ public class CountController : MonoBehaviour
         else if (other.gameObject.tag == "Human" && !Animator.GetBool("IsDead"))
         {
             Destroy(other.gameObject);
+
             countsayaci = countsayaci + other.gameObject.GetComponent<StrognValue>().countstartvalue;
+
+
             count.text = countsayaci.ToString();
         }
 
-        transformplayer.localScale = new Vector3(2 + (countsayaci * 0.1f), 2 + (countsayaci * 0.1f), 2 + (countsayaci * 0.1f));
-
+        if (countsayaci <= 45)
+        {
+            transformplayer.localScale = new Vector3(2 + (countsayaci * 0.1f), 2 + (countsayaci * 0.1f), 2 + (countsayaci * 0.1f));
+        }
         if (countsayaci <= 0)
         {
             Animator.SetBool("IsDead", true);

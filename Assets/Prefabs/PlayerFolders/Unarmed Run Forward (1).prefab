@@ -126,8 +126,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2374010502642573595}
   m_LocalRotation: {x: -0, y: 0.00012786685, z: -0, w: -1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0832512}
-  m_LocalScale: {x: 0.00090110675, y: 0.0009011066, z: 0.00090110675}
+  m_LocalPosition: {x: 0, y: 0, z: -0.096}
+  m_LocalScale: {x: 0.00062234036, y: 0.00062234025, z: 0.00062234036}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2374010502673536334}
@@ -136,7 +136,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 179.989, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 351.37646, y: 52.367714}
+  m_AnchoredPosition: {x: 0.131, y: 0.609}
   m_SizeDelta: {x: 650, y: 514}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &2374010502642573604
@@ -824,7 +824,7 @@ GameObject:
   - component: {fileID: 4122724305731288572}
   m_Layer: 0
   m_Name: Unarmed Run Forward (1)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -838,7 +838,7 @@ Transform:
   m_GameObject: {fileID: 5986594229604661185}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.8447473, y: 0.5, z: 48.361225}
-  m_LocalScale: {x: 2.4496, y: 2.4496, z: 2.4496}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1225133721043733161}
@@ -953,6 +953,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HorizontalValue: 0
   speed: 4
+  animator: {fileID: -8643152216968109911}
 --- !u!114 &4122724305731288572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -966,7 +967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   count: {fileID: 2374010502673536329}
-  baslangiccountdegeri: 10
+  baslangiccountdegeri: 1
   countsayaci: 0
 --- !u!1 &6758473750752610518
 GameObject:

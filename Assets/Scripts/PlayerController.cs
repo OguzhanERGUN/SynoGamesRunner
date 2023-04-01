@@ -6,7 +6,8 @@ public class PlayerController : MonoBehaviour
 {
     public float HorizontalValue;
     public float speed;
-    private float BorderX = 1.7f;
+    private float BorderXPozitive = 1.20f;
+    private float BorderXNegative = -3.00f;
     [SerializeField] private Animator animator;
     // Start is called before the first frame update
     void Start()
@@ -18,24 +19,27 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         #region Borders 
-        if (transform.position.x < -BorderX)
+        if (transform.position.x < BorderXNegative)
         {
-            transform.position = new Vector3(-BorderX, transform.position.y, transform.position.z);
+            transform.position = new Vector3(BorderXNegative, transform.position.y, transform.position.z);
         }
-        else if (transform.position.x > BorderX)
+        else if (transform.position.x > BorderXPozitive)
         {
-            transform.position = new Vector3(BorderX, transform.position.y, transform.position.z);
+            transform.position = new Vector3(BorderXPozitive, transform.position.y, transform.position.z);
 
         }
         #endregion
         #region Right Left Movement Controller
         HorizontalValue = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * Time.deltaTime * speed * HorizontalValue);
-        if (!animator.GetBool("IsDead"))
+        #endregion
+
+
+        if (!animator.GetBool("IsDead") && !animator.GetBool("IsClosedBoss"))
         {
             transform.Translate(Vector3.forward * Time.deltaTime * speed);
         }
         
-        #endregion
+        
     }
 }

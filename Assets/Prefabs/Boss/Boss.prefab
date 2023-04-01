@@ -81,7 +81,7 @@ GameObject:
   - component: {fileID: 8554973021996047153}
   m_Layer: 0
   m_Name: Boss
-  m_TagString: Human
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,7 +93,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1490410704212906203}
-  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.000035986304}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0.000034922778}
   m_LocalPosition: {x: 10.27, y: -6.29075, z: -140.05}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
@@ -114,7 +114,7 @@ Animator:
   m_GameObject: {fileID: 1490410704212906203}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7a92c052c5b1ef346bcc7cafb78971ba, type: 2}
+  m_Controller: {fileID: 9100000, guid: 62550cdb9d15082488dfc8ad48535162, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   count: {fileID: 7442632559102980691}
-  countstartvalue: 5
+  countstartvalue: 20
 --- !u!1 &1687558959766778752
 GameObject:
   m_ObjectHideFlags: 0
@@ -1101,7 +1101,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2f110609cb609284889f9908c00bdfc7, type: 2}
+  - {fileID: 2100000, guid: 9b87cddf0d0334a4bb27b06e0b5f3f29, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
