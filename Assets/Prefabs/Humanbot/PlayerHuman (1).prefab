@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   count: {fileID: 8498941111433514906}
-  countstartvalue: 5
+  countstartvalue: 3
 --- !u!1 &633472636616905221
 GameObject:
   m_ObjectHideFlags: 0
