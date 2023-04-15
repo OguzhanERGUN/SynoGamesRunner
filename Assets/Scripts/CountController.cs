@@ -31,7 +31,7 @@ public class CountController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Wall" && !Animator.GetBool("IsDead"))
+        if (other.gameObject.tag == "Boss" || other.gameObject.tag == "Wall" && !Animator.GetBool("IsDead"))
         {
             countsayaci = countsayaci - other.gameObject.GetComponent<StrognValue>().countstartvalue;
             count.text = countsayaci.ToString();

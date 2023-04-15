@@ -822,6 +822,7 @@ GameObject:
   - component: {fileID: 7169329604793731214}
   - component: {fileID: 4122724305731288571}
   - component: {fileID: 4122724305731288572}
+  - component: {fileID: 4122724305731288573}
   m_Layer: 0
   m_Name: Unarmed Run Forward (1)
   m_TagString: Player
@@ -969,6 +970,20 @@ MonoBehaviour:
   count: {fileID: 2374010502673536329}
   baslangiccountdegeri: 1
   countsayaci: 0
+--- !u!114 &4122724305731288573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5986594229604661185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f45a86637481d846b867d29758c9c64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalCoin: 0
+  totalCoinText: {fileID: 0}
 --- !u!1 &6758473750752610518
 GameObject:
   m_ObjectHideFlags: 0

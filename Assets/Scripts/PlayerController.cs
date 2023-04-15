@@ -30,8 +30,13 @@ public class PlayerController : MonoBehaviour
         }
         #endregion
         #region Right Left Movement Controller
-        HorizontalValue = Input.GetAxis("Horizontal");
-        transform.Translate(Vector3.right * Time.deltaTime * speed * HorizontalValue);
+        if (!animator.GetBool("IsClosedBoss"))
+        {
+
+            HorizontalValue = Input.GetAxis("Horizontal");
+            transform.Translate(Vector3.right * Time.deltaTime * speed * HorizontalValue);
+        }
+
         #endregion
 
 
@@ -39,7 +44,7 @@ public class PlayerController : MonoBehaviour
         {
             transform.Translate(Vector3.forward * Time.deltaTime * speed);
         }
-        
-        
+
+
     }
 }

@@ -255,7 +255,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: c9c350310fd60074bb4843fc805af4e1, type: 2}
@@ -607,6 +607,10 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 506192556}
+    - target: {fileID: 4122724305731288573, guid: afb6b6402a1875a439fcc00fef09c1fd, type: 3}
+      propertyPath: totalCoinText
+      value: 
+      objectReference: {fileID: 8019272}
     - target: {fileID: 5986594229604661185, guid: afb6b6402a1875a439fcc00fef09c1fd, type: 3}
       propertyPath: m_Name
       value: PlayerHuman
