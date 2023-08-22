@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class CoinController : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class CoinController : MonoBehaviour
     public TextMeshProUGUI totalCoinText;
     private void Start()
     {
+        totalCoin = PlayerPrefs.GetFloat("TotalCoinValue");
         totalCoinText.text = totalCoin.ToString();
     }
     private void OnTriggerEnter(Collider other)
@@ -16,8 +18,16 @@ public class CoinController : MonoBehaviour
         if (other.CompareTag("Coin"))
         {
             totalCoin+=10;
+            SetTotalCoin("TotalCoinValue", totalCoin);
             Destroy(other.gameObject);
             totalCoinText.text = totalCoin.ToString();
         }
+    }
+
+
+
+    private void SetTotalCoin(string key, float score)
+    {
+        PlayerPrefs.SetFloat(key, score);
     }
 }

@@ -7,6 +7,7 @@ public class CountController : MonoBehaviour
 {
     [SerializeField] public TextMeshProUGUI count;
     [SerializeField] public int baslangiccountdegeri;
+    [SerializeField] public GameObject failWhilePlayingMenu;
     private Animator Animator;
     public int countsayaci;
     private Transform transformplayer;
@@ -31,7 +32,7 @@ public class CountController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Boss" || other.gameObject.tag == "Wall" && !Animator.GetBool("IsDead"))
+        if (other.gameObject.tag == "Wall" && !Animator.GetBool("IsDead"))
         {
             countsayaci = countsayaci - other.gameObject.GetComponent<StrognValue>().countstartvalue;
             count.text = countsayaci.ToString();
@@ -46,6 +47,14 @@ public class CountController : MonoBehaviour
             count.text = countsayaci.ToString();
         }
 
+        else if (other.gameObject.tag == "Boss" && !Animator.GetBool("IsDead"))
+        {
+            countsayaci = countsayaci - other.gameObject.GetComponent<StrognValue>().countstartvalue;
+            count.text = countsayaci.ToString();
+
+            Destroy(other.gameObject);
+        }
+
         if (countsayaci <= 45)
         {
             transformplayer.localScale = new Vector3(2 + (countsayaci * 0.1f), 2 + (countsayaci * 0.1f), 2 + (countsayaci * 0.1f));
@@ -53,6 +62,7 @@ public class CountController : MonoBehaviour
         if (countsayaci <= 0)
         {
             Animator.SetBool("IsDead", true);
+            failWhilePlayingMenu.SetActive(true);
             count.text = "0";
         }
     }
