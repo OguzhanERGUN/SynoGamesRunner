@@ -22,10 +22,4 @@ public class BossController : MonoBehaviour
         animator.SetBool("IsClosedBoss", false);
 
     }
-
-
-    public void TryAgain()
-    {
-        SceneManager.LoadScene(0);
-    }
 }

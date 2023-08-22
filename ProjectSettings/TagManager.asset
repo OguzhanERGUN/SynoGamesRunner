@@ -8,6 +8,7 @@ TagManager:
   - Human
   - Boss
   - Coin
+  - FinalLine
   layers:
   - Default
   - TransparentFX

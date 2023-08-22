@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class SetTotalCoin : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class SetTotalCoin : MonoBehaviour
     {
         SetTotalCoinValue();
     }
-    
+
     private void SetTotalCoinValue()
     {
         totalCoinText.text = PlayerPrefs.GetFloat("TotalCoinValue").ToString();
