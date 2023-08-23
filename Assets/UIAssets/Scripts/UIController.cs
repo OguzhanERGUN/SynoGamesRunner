@@ -20,7 +20,7 @@ public class UIController : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(Random.Range(1,6));
     }
 
     public void WatchAds()
